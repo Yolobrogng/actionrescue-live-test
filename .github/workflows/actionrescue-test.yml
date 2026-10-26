@@ -1,0 +1,16 @@
+
+name: ActionRescue Test
+
+on:
+  workflow_dispatch:
+
+permissions: {}
+
+jobs:
+  smoke-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+
+    steps:
+      - name: Print test message
+        run: echo "ActionRescue test completed successfully!"
